@@ -1,7 +1,25 @@
 aid: wevat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wevat.png
 name: Wevat
-description: Wevat is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Wevat is a Seedcamp-backed fintech and travel-tech company operating a mobile app
+  that digitizes VAT (Value Added Tax) refunds for international travellers shopping in France.
+  Instead of paper tax-free forms, shoppers photograph their invoices in the Wevat app, which
+  consolidates purchases across stores into a single digital tax-refund form, validates it at
+  the departure point, and pays out the refund (up to around 13% of spend) in the traveller's
+  chosen currency via credit card, bank transfer, Alipay, or WeChat Pay. Wevat is a consumer
+  mobile-app product and does not currently publish a public developer API, SDK, or API
+  documentation surface; this profile captures its public web and business identity.
 url: https://raw.githubusercontent.com/api-evangelist/wevat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Payments
+- VAT Refund
+- Tax-Free Shopping
+- Travel
+- Mobile App
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,21 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wevat-domain-security.yml
 - type: Website
-  url: http://wevat.com
+  url: https://www.wevat.com
+- type: Blog
+  url: https://www.wevat.com/blog-en
+- type: Support
+  url: https://www.wevat.com/contact-en
+- type: PrivacyPolicy
+  url: https://www.wevat.com/privacy-policy
+- type: TermsOfService
+  url: https://www.wevat.com/terms-and-conditions
+
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
